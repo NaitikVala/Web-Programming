@@ -1,0 +1,43 @@
+<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demonstration of Inline Frames (iframes)</title>
+    <style>
+        /* Optional styling for a more consistent experience */
+        main {
+            display: flex;
+            flex-direction: column; /* Arrange sections vertically */
+            margin: 0 auto; /* Center the content */
+        }
+        iframe {
+            border: 1px solid #ddd; /* Add a subtle border */
+            margin: 10px; /* Add some spacing */
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Content in Main Section</h1>
+        <p>This paragraph is part of the main content. It's not contained within an iframe.</p>
+
+        <h2>Embedding External Content with iframes</h2>
+
+        <section>
+            <h3>Iframe 1: Local Content</h3>
+            <iframe src="local-content.html" width="600" height="400"></iframe>
+        </section>
+
+        <section>
+            <h3>Iframe 2: External Website</h3>
+            <iframe src="https://www.example.com" width="800" height="500"></iframe>
+        </section>
+
+        <section>
+            <h3>Example with Responsive Sizing</h3>
+            <iframe src="local-content.html" width="100%" height="300px"></iframe>
+        </section>
+    </main>
+</body>
+</html>

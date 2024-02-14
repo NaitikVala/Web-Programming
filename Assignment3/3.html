@@ -1,0 +1,40 @@
+<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Details Form</title>
+</head>
+<body>
+    <h2>User Details Form</h2>
+    <form action="/submit-details" method="POST">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="address">Address:</label><br>
+        <textarea id="address" name="address" rows="4" cols="50" required></textarea><br><br>
+
+        <label>Subject of Book:</label><br>
+        <input type="radio" id="subject_fiction" name="subject" value="Fiction" required>
+        <label for="subject_fiction">Fiction</label><br>
+        <input type="radio" id="subject_non_fiction" name="subject" value="Non-Fiction" required>
+        <label for="subject_non_fiction">Non-Fiction</label><br><br>
+
+        <label for="favorite_author">Favorite Author:</label><br>
+        <select id="favorite_author" name="favorite_author" required>
+            <option value="">Select an author</option>
+            <option value="J.K. Rowling">J.K. Rowling</option>
+            <option value="Stephen King">Stephen King</option>
+            <option value="Haruki Murakami">Haruki Murakami</option>
+            <option value="Jane Austen">Jane Austen</option>
+            <option value="George Orwell">George Orwell</option>
+            <!-- Add more options as needed -->
+        </select><br><br>
+
+        <label for="comments">Comments on the last book you read:</label><br>
+        <textarea id="comments" name="comments" rows="4" cols="50"></textarea><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
